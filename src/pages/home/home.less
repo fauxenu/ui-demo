@@ -1,62 +1,33 @@
 @import '~styles/variables';
 
 #home {
-  .hero,
-  .hero__overlay {
-    height: 100vh;
-    min-height: 800px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  // home-specific component overrides
+  .home__cards {
+    margin-top: -1.5 * @header-height;
   }
 
-  .hero {
-    position: relative;
+  .home__hero .hero {
     top: -@header-height / 2;
-    background-image: url(~assets/bg.jpg);
+    background: url(~assets/bg.jpg) no-repeat center;
+    background-size: cover;
 
-    &__overlay {
-      display: none;
-
-      @media(min-width: @screen-lg) {
-        display: block;
+    @media(min-width: @screen-lg) {
+      &:before {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
+        height: 100%;
         width: 100%;
-        background-image: url(~assets/bg-overlay.png);
+        background: url(~assets/bg-overlay.png) no-repeat center;
+        background-size: cover;
       }
     }
 
-    &__content {
-      color: @color-white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      text-align: center;
-
-      > [class^="col-"] {
-        padding: 0 20px;
-      }
-    }
-
-    &__heading {
-      margin-bottom: 4 * @grid-baseline;
-
+     &__heading {
       @media(min-width: @screen-lg) {
         margin-top: 30 * @grid-baseline;
       }
     }
-
-    &__cta {
-      position: relative;
-      z-index: 1000;
-    }
-  }
-
-  // home-specific component overrides
-  .home__cards {
-    margin-top: -1.5 * @header-height;
   }
 }

@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "title": "Lorem ipsum dolor site amotcon secteuer adipiscinm elsed daeom",
+    "summary": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+    "cta": "Call to Action",
+    "ctaLink": "/",
+    "ctaIcon": "arrow"
+  },
   "cards": [
     {
       "id": 1,

@@ -1,0 +1,29 @@
+@import '~styles/variables';
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;;
+
+  &__content {
+    color: @color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+
+    > [class^="col-"] {
+      padding: 0 20px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 4 * @grid-baseline;
+  }
+
+  &__cta {
+    position: relative;
+    z-index: 1;
+  }
+}
