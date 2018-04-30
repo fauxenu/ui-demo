@@ -1,0 +1,18 @@
+# http://editorconfig.org/
+
+# This is the root file
+root = true
+
+# Use LF, insert final newline, trim trailing whitespace, and indent with spaces
+#  for all files.
+[*]
+end_of_line = LF
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+
+[*.{js,css,jsx,less,json,html}]
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_size = 4

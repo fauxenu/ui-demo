@@ -1,0 +1,62 @@
+@import '~styles/variables';
+
+#home {
+  .hero,
+  .hero__overlay {
+    height: 100vh;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero {
+    position: relative;
+    top: -@header-height / 2;
+    background-image: url(~assets/bg.jpg);
+
+    &__overlay {
+      display: none;
+
+      @media(min-width: @screen-lg) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: url(~assets/bg-overlay.png);
+      }
+    }
+
+    &__content {
+      color: @color-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+
+      > [class^="col-"] {
+        padding: 0 20px;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 4 * @grid-baseline;
+
+      @media(min-width: @screen-lg) {
+        margin-top: 30 * @grid-baseline;
+      }
+    }
+
+    &__cta {
+      position: relative;
+      z-index: 1000;
+    }
+  }
+
+  // home-specific component overrides
+  .home__cards {
+    margin-top: -1.5 * @header-height;
+  }
+}

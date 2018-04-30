@@ -1,0 +1,74 @@
+body {
+  background-color: @color-paper;
+  font-family: @font-fira-sans;
+  font-size: @font-size-base;
+  letter-spacing: 0.015rem;
+  line-height: @line-height-base;
+  padding-top: @header-height;
+}
+
+h1, h2 {
+  font-family: @font-playfair;
+}
+
+h1 {
+  font-size: @font-size-xl;
+  font-weight: 900;
+  letter-spacing: 0.03rem;
+  line-height: @line-height-xl
+}
+
+h2 {
+  font-size: @font-size-lg;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+  line-height: @line-height-lg;
+}
+
+small, .small {
+  font-size: @font-size-sm;
+  letter-spacing: -0.01rem;
+  line-height: @line-height-sm;
+}
+
+caption, a, .mono {
+  font-family: @font-fira-mono;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: @line-height-xs;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: @font-size-sm;
+  text-decoration: none;
+  color: @color-teal;
+}
+
+caption {
+  font-size: @font-size-xs;
+}
+
+hr {
+  position: relative;
+  height: 8 * @grid-baseline;
+  margin: 8 * @grid-baseline 0;
+  border: 0;
+}
+
+hr:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid @color-peach;
+  transform: rotate(45deg);
+  transform-origin: 0%;
+}
+
+::-webkit-input-placeholder,
+::-ms-input-placeholder,
+::-moz-placeholder, {
+  color: @color-black;
+}

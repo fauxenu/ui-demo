@@ -1,0 +1,21 @@
+.input-group {
+  background-color: @color-white;
+  padding: 2 * @grid-baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    padding: 2 * @grid-baseline;
+  }
+
+  .icon {
+    background-color: @color-black;
+  }
+
+  &__append {
+    border-left: 1px solid fade(@color-peach, 60%);
+    margin-left: 4 * @grid-baseline;
+    padding-left: 4 * @grid-baseline;
+  }
+}

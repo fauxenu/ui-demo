@@ -1,0 +1,52 @@
+// fonts
+@font-playfair: 'Playfair Display', serif;
+@font-fira-sans: 'Fira Sans', sans-serif;
+@font-fira-mono: 'Fira Mono', monospace;
+
+// font sizing
+@font-rem-unit: 0.0625rem; /* value of 1px in REM, used for size conversions */
+@font-size-base: 16px;
+@font-size-xs: 12 * @font-rem-unit; // 12px
+@font-size-sm: 14 * @font-rem-unit; // 14px
+@font-size-md: @font-size-base; // 16px
+@font-size-lg: 20 * @font-rem-unit; // 20px
+@font-size-xl: 35 * @font-rem-unit; // 35px
+
+// line heiths
+@line-height-base: 24 * @font-rem-unit; // 24px
+@line-height-xs: 16 * @font-rem-unit; // 12px
+@line-height-sm: 20 * @font-rem-unit; // 14px
+@line-height-md: @line-height-base; // 24px
+@line-height-lg: 28 * @font-rem-unit; // 20px
+@line-height-xl: 44 * @font-rem-unit;; // 44px
+
+// accent colors (RGB triplets for easy rgba(...) conversion
+@color-taupe: rgb(153, 138, 127);
+@color-teal: rgb(76, 98, 102);
+@color-peach: rgb(212, 186, 163);
+@color-moss: rgb(77, 140, 140);
+
+// neutral colors
+@color-white: rgb(255, 255, 255);
+@color-paper: rgb(217, 217, 217);
+@color-black: rgb(38, 38, 38);
+
+// grid sizing
+@grid-baseline: 4px;
+@grid-col-width-desktop: 56px;
+@grid-gutter-width-desktop: 32px;
+@grid-max-width-desktop: 1056px;
+@grid-flex-item-width: @grid-col-width-desktop + @grid-gutter-width-desktop;
+@grid-item-width: @grid-col-width-desktop + (@grid-gutter-width-desktop / 2);
+
+// element sizing
+@header-height: 72px;
+@logo-width: 120px;
+@logo-height: 24px;
+@footer-margin: 72px;
+
+// layout breakpoints
+@screen-sm: 576px;
+@screen-md: 768px;
+@screen-lg: @grid-max-width-desktop;
+@screen-xl: 1200px;

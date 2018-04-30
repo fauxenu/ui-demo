@@ -1,0 +1,49 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": " Ametain Consectetuer",
+      "summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna t ullamcorpe.",
+      "footer": "LOREM IPSUM",
+      "size": "tall",
+      "icon": "help",
+      "background": "taupe"
+    },
+    {
+      "id": 2,
+      "title": " Consectetuer adipi scing elitsed diam nonumm veleum iriure dolor.",
+      "summary": "Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree.",
+      "footer": "TINCIDU UT LAOREET",
+      "size": "wide",
+      "icon": "document",
+      "background": null
+    },
+    {
+      "id": 3,
+      "title": " Aliquam Erat Bolutpat.",
+      "summary": "",
+      "footer": "CONSECTUER DIAM",
+      "size": null,
+      "icon": "ask",
+      "background": null
+    },
+    {
+      "id": 4,
+      "title": "Esse molestie ametcon sequat nihn ullafacil lorem ipsum.",
+      "summary": "Consectetuer adipiscing elits eddiam nonummy nibh.",
+      "footer": "",
+      "size": null,
+      "icon": "help",
+      "background": null
+    },
+    {
+      "id": 5,
+      "title": "Esse molestie ametcon sequat nihn ullafacil lorem ipsum.",
+      "summary": "",
+      "footer": "EXERCI TATION ULLAMCORPER",
+      "size": "wide",
+      "icon": "document",
+      "background": "teal"
+    }
+  ]
+}

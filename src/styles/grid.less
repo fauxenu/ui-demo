@@ -1,0 +1,40 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media(min-width: @screen-lg) {
+    width: @screen-lg;
+  }
+
+  @media(max-width: @screen-lg - 1) {
+    padding-left: 2 * @grid-baseline;
+    padding-right: 2 * @grid-baseline;
+  }
+}
+
+[class^="col-"] {
+  padding: 0 @grid-gutter-width-desktop;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(min-width: @screen-lg) {
+  .col-1 { width: @grid-col-width-desktop; }
+  .col-2 { width: 2 * @grid-flex-item-width; }
+  .col-3 { width: 3 * @grid-flex-item-width; }
+  .col-4 { width: 4 * @grid-flex-item-width; }
+  .col-5 { width: 5 * @grid-flex-item-width; }
+  .col-6 { width: 6 * @grid-flex-item-width; }
+  .col-7 { width: 7 * @grid-flex-item-width; }
+  .col-8 { width: 8 * @grid-flex-item-width; }
+  .col-9 { width: 9 * @grid-flex-item-width; }
+  .col-10 { width: 10 * @grid-flex-item-width; }
+  .col-11 { width: 11 * @grid-flex-item-width; }
+  .col-12 { width: 100%; }
+}

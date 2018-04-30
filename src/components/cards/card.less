@@ -1,0 +1,128 @@
+@import '~styles/variables';
+
+.card {
+  @card-padding: 6 * @grid-baseline;
+
+  padding-top: @card-padding;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: @color-white;
+  min-height: 75 * @grid-baseline;
+
+  &__content,
+  &__footer {
+    padding: @card-padding;
+  }
+
+  &__content {
+    padding-top: 0;
+  }
+
+  &__title {
+    margin-top: 2 * @grid-baseline;
+    margin-bottom: 4 * @grid-baseline;
+  }
+
+  &__summary {
+    color: @color-taupe;
+    font-size: @font-size-sm;
+  }
+
+  &__footer {
+    position: relative;
+    text-align: right;
+    font-size: @font-size-sm;
+    color: @color-moss;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: @card-padding;
+      top: -@grid-baseline;
+      height: 20px;
+      border-right: 1px solid @color-taupe;
+      transform: rotate(45deg);
+      transform-origin: 0% 0%;
+    }
+  }
+
+  &--taupe,
+  &--teal {
+    .card__title {
+      color: @color-white;
+    }
+
+    .card__summary {
+      color: fade(@color-black, 50%);
+    }
+  }
+
+  &--taupe {
+    background-color: @color-taupe;
+
+    &.pattern:after {
+      background-color: fade(@color-teal, 30%);
+    }
+
+    .icon {
+      background-color: fade(@color-black, 50%);
+    }
+
+    .card__content {
+      background-color: @color-taupe;
+    }
+
+    .card__footer {
+      color: @color-white;
+
+      &:before {
+        border-color: @color-white;
+      }
+    }
+  }
+
+  &--teal {
+    background-color: @color-teal;
+
+    &.pattern:after {
+      background-color: fade(@color-moss, 20%);
+    }
+
+    .icon {
+      background-color: @color-peach;
+    }
+
+    .card__content {
+      background-color: @color-teal;
+    }
+
+    .card__footer {
+      color: @color-peach;
+
+      &:before {
+        border-color: @color-peach;
+      }
+    }
+  }
+
+  &--tall {
+    grid-row: auto / span 2;
+  }
+
+  &--wide {
+    grid-column: auto / span 2;
+
+    .card__content {
+      width: 80%;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2 * @grid-baseline;
+
+    @media(min-width: @screen-lg) {
+      margin-bottom: 0;
+    }
+  }
+}

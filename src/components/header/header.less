@@ -1,0 +1,36 @@
+@import '~styles/variables.less';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: @color-taupe;
+  height: @header-height;
+  padding: 4 * @grid-baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+
+  &__logo {
+    display: block;
+    width: @logo-width;
+    height: @logo-height;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    text-align: right;
+
+    .nav__item {
+      color: @color-white;
+      font-size: @font-size-sm;
+      margin: 3 * @grid-baseline;
+      text-decoration: none;
+    }
+  }
+}

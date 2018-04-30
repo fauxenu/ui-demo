@@ -1,0 +1,43 @@
+@import '~styles/variables';
+
+.footer {
+  position: relative;
+  background-color: @color-black;
+  margin-top: @footer-margin;
+  margin-bottom: @footer-margin;
+  padding: @footer-margin .75 * @footer-margin;
+  text-align: center;
+
+  &:before {
+    content: '\0026';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: @color-white;
+    font-family: @font-playfair;
+    font-size: 90 * @font-rem-unit;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &__header {
+    color: @color-peach;
+    background-color: @color-black;
+    padding: 2 * @grid-baseline;
+    margin-bottom: .75 * @footer-margin;
+  }
+
+
+  &__form {
+    display: inline-block;
+
+    input {
+      font-size: @font-size-sm;
+      text-align: center;
+    }
+
+    .input-group {
+      padding: 3 * @grid-baseline;
+    }
+  }
+}
